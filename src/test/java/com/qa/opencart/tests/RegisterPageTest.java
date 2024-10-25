@@ -26,14 +26,13 @@ public class RegisterPageTest extends BaseTest{
 		
 	}
 	
-//	@DataProvider(name = "regData")
-//	public Object[][] getUserRegTestData() {
-//		return new Object[][] {
-//			{"abhi", "anand", "9876545678", "abhi@123", "yes"},
-//			{"robinson", "matinez", "9876545600", "robin@123", "no"},
-//			{"amber", "automation", "9876545998", "amber@123", "yes"},
-//		};
-//	}
+	@DataProvider(name = "regData")
+	public Object[][] getUserRegTestData() {
+		return new Object[][] {
+			{"abhi", "anand", "9876545678", "abhi@123", "yes"},
+			{"robinson", "matinez", "9876545600", "robin@123", "no"},
+		};
+	}
 	
 	
 	@DataProvider(name = "regExcelData")
@@ -43,7 +42,7 @@ public class RegisterPageTest extends BaseTest{
 	}
 	
 	
-	@Test(dataProvider = "regExcelData")
+	@Test(dataProvider = "regData")
 	public void userRegisterTest(String firstName, String lastName, String telephone, String password, String subscribe) {
 		String actRegSuccMessg = 
 				registerPage.registerUser(firstName, lastName, getRandomEmailID(), telephone, password, subscribe);

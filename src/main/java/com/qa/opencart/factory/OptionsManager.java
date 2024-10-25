@@ -32,6 +32,7 @@ public class OptionsManager {
 		if(Boolean.parseBoolean(prop.getProperty("remote"))){
 			co.setCapability("browserName", "chrome");
 			co.setBrowserVersion(prop.getProperty("browserversion"));
+			
 			//co.setCapability("enableVNC", true);
 //			co.setCapability("se:timeZone", "US/Pacific");
 //			co.setCapability("se:screenResolution", "1920x1080");

@@ -8,7 +8,7 @@ import com.qa.opencart.base.BaseTest;
 
 public class LoginPageNegativeTest extends BaseTest{
 	
-	@DataProvider
+	@DataProvider(name="")
 	public Object[][] incorrectLoginTestData() {
 		return new Object[][] {
 			{"auto123@gmaill.com", "123456"},

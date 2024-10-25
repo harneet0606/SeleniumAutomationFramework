@@ -22,7 +22,6 @@ import com.qa.opencart.frameworkexception.FrameException;
 
 public class DriverFactory {
 
-	WebDriver driver;
 	OptionsManager optionsManager;
 	public static String highlightElement;
 	public Properties prop;
